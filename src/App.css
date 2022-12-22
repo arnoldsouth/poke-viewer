@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
+.container {
+  /* width: 100%; */
+  margin: 1rem;
+  /* display: flex; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.left-content,
+.right-content {
+  flex-basis: 50%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.left-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100%, 0.5fr));
+  grid-gap: 0.5rem;
+  /* text-transform: uppercase; */
+  letter-spacing: -0.25px;
+  font-size: 1.5rem;
+  font-family: 'Bebas Neue', cursive;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card {
+  width: 100%;
+  background-color: #dda78e;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.1rem 0.1rem grey;
+  padding: 0 1rem;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: left;
+  box-sizing: border-box;
+  cursor: pointer;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.card-img {
+  width: 2rem;
+  /* height: 3rem; */
+  margin: 0 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.right-content {
+  width: 100%;
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  color: black;
+  position: relative;
+  /* top: 6rem; */
+  /* right: 0.01rem; */
+}
+
+.right-content img {
+  margin: 0.5rem;
+  width: 6rem;
+  height: 6rem;
+}
+
+.right-content h1 {
+  letter-spacing: -0.25px;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2.5rem;
+}
+
+.abilities {
+  /* width: 70%; */
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 1rem; */
+}
+
+.abilities .group {
+  background-color: #dda78e;
+  color: white;
+  padding: 0.5rem;
+  /* font-size: 1.25rem; */
+  /* letter-spacing: -0.25px; */
+  font-family: 'Bebas Neue', cursive;
+  border-radius: 0.5rem;
+  margin: 0 0.5rem;
+}
+
+.base-stat {
+  margin-top: 1rem;
+  /* font-size: 1rem; */
+
+  font-family: 'Bebas Neue', cursive;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-group button {
+  outline: none;
+  border: none;
+  width: 6rem;
+  padding: 0.3rem 0;
+  margin: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #dda78e;
+  border-radius: 0.5rem;
+
+  /* letter-spacing: -0.25px; */
+  font-family: 'Bebas Neue', cursive;
+  box-shadow: 0 0.1rem 0.1rem grey;
 }
