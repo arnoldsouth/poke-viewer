@@ -12,7 +12,7 @@ const PokemonList = () => {
   const [pokeData, setPokeData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [url, setUrl] = useState(
-    'https://pokeapi.co/api/v2/pokemon/?offset=0&limit=9'
+    'https://pokeapi.co/api/v2/pokemon/?offset=0&limit=6'
   );
   const [nextUrl, setNextUrl] = useState();
   const [prevUrl, setPrevUrl] = useState();
