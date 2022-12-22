@@ -44,7 +44,7 @@ const PokemonList = () => {
 
   return (
     <>
-      <div className="container">
+      <div>
         <div className="left-content">
           <PokemonCard
             pokemon={pokeData}

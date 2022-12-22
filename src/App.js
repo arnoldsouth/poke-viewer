@@ -6,7 +6,8 @@ import PokemonList from './components/PokemonList';
 
 function App() {
   return (
-    <div>
+    <div className="container">
+      <div className="header">pokeVIEWER</div>
       <PokemonList />
     </div>
   );
